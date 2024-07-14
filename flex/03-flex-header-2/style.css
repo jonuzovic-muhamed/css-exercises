@@ -9,6 +9,8 @@ body {
 }
 
 .header {
+  display: flex;
+  align-items: center;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
@@ -20,6 +22,7 @@ body {
   border-radius: 50%;
   width: 48px;
   height: 48px;
+  margin-right: 15px;
 }
 
 .logo {
@@ -27,6 +30,8 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  padding: 0px 0px 0px 10px;
+  margin: 0 0;
 }
 
 button {
@@ -34,6 +39,7 @@ button {
   border-radius: 8px;
   background: rebeccapurple;
   color: white;
+  margin-right: 15px;
   padding: 8px 24px;
 }
 
@@ -44,5 +50,9 @@ a {
 }
 
 ul {
+  flex: 1;
+  display: flex;
+  gap: 16px;
+  margin-left: 0;
   list-style-type: none;
 }
