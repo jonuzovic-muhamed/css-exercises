@@ -5,6 +5,9 @@ html {
 }
 
 .container {
+  display: grid;
+  grid-template: repeat(6, 50px) / repeat(6 / 50px);
+  gap: 20px;
   text-align: center;
   height: 100%;
   padding: 16px;
@@ -14,29 +17,34 @@ html {
 .container div {
   padding: 15px;
   font-size: 32px;
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   font-weight: bold;
   color: white;
   border-radius: 15px;
 }
 
 .header {
+  grid-area: 1 / 1 / 2 / 7 ;
   background-color: #006157;
 }
 
 .sidebar {
+  grid-area: 2 / 1 / 6 / 3;
   background-color: #005B94;
 }
 
 .nav {
+  grid-area: 2 / 3 / 3 / 7;
   background-color: #642cde;
 }
 
 .article {
+  grid-area: 3 / 3 / 6 / 7;
   background-color: #7E1DC3;
 }
 
 .footer {
+  grid-area: 6 / 1 / 7 / 7 ;
   background-color: #393f4d;
 }
 
